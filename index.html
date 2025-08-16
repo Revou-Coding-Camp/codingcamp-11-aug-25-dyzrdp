@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+  <div class="logo">🌐 My Portofolio</div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Our Profile</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Message Us</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<section id="home" class="banner">
+  <div class="banner-content">
+    <h1 id="welcome-text">Hi, <span id="name-placeholder">Guest</span> 👋</h1>
+    <p>Selamat datang di portofolio saya</p>
+    <div class="banner-img">[ Banner Foto 1366x578 ]</div>
+  </div>
+</section>
+
+  <!-- OUR PROFILE -->
+  <section id="profile" class="profile-section">
+    <h2>Our Profile</h2>
+    <div class="profile-container">
+      <div class="profile-card">
+        <h3>Tentang Saya</h3>
+        <p>Saya adalah seorang pelajar yang sedang menempuh pendidikan di bidang Rekayasa Perangkat Lunak. Saya memiliki semangat untuk terus belajar, mengembangkan keterampilan, serta beradaptasi dengan perkembangan teknologi.</p>
+      </div>
+
+      <div class="profile-card">
+        <h3>Visi</h3>
+        <p>Menjadi pelajar yang berprestasi, berkarakter, dan mampu memberikan kontribusi positif di bidang teknologi maupun kehidupan sosial.</p>
+      </div>
+
+      <div class="profile-card">
+        <h3>Misi</h3>
+        <ul>
+          <li>Meningkatkan kemampuan akademik dan non-akademik secara konsisten.</li>
+          <li>Mengasah keterampilan digital dan pemrograman untuk menghadapi tantangan masa depan.</li>
+          <li>Menumbuhkan sikap disiplin, tanggung jawab, dan kreatif dalam setiap kegiatan.</li>
+          <li>Menggunakan ilmu yang dipelajari untuk memberi manfaat bagi orang lain.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADQUARTER -->
+  <section class="headquarter">
+    <h2>Where I Learn</h2>
+    <div class="hq-list">
+      <div class="hq-item">
+        <div class="circle"></div>
+        <p>Sekolah</p>
+      </div>
+      <div class="hq-item">
+        <div class="circle"></div>
+        <p>Bekasi</p>
+      </div>
+      <div class="hq-item">
+        <div class="circle"></div>
+        <p>Revou</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>Message Us</h2>
+    <div class="contact-container">
+      <form id="contact-form">
+        <label for="name">Nama</label>
+        <input type="text" id="name" required>
+
+        <label for="dob">Tanggal Lahir</label>
+        <input type="date" id="dob" required>
+
+        <label>Jenis Kelamin</label>
+        <div>
+          <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+          <input type="radio" name="gender" value="Perempuan" required> Perempuan
+        </div>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="form-output" class="output-box"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Created By Dzaky</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="js/script.js"></script>
+</body>
+</html>
